@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8"> 
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <footer>
+            <img src="logo.jpg">
+              <p>"Está precisando dar aquele trato completo no visual? Aqui você faz barba, cabelo e sombrancelha e ainda tem aquela resenha com a rapaziada. Consulte nossos dias de atendimento e marque um horário com a gente".</p>
+
+        </footer>
+       
+        <title>BARBEARIA </title>
+        <link rel="stylesheet" href="reset.css">
+        <link rel="stylesheet" href="style-home.css">
+
+      
+      
+         </div class="caixa">
+        </head>
+
+        <script>
+  function abrirModal(corte) {
+    document.getElementById('modal').style.display = 'block';
+    document.getElementById('titulo-corte').innerText = `Agendar ${corte}`;
+    document.getElementById('tipo-corte').value = corte;
+  }
+
+  function fecharModal() {
+    document.getElementById('modal').style.display = 'none';
+  }
+
+  
+  window.onclick = function(event) {
+    const modal = document.getElementById('modal');
+    if (event.target == modal) {
+      modal.style.display = 'none';
+    }
+  }
+</script>
+
+    <body>
+        
+    <h1>Cortes que Fazemos</h1>
+
+    <div class="cortes"onclick="abrirModal('Corte')">
+        <label>Cortes R$ 35</label><img src="cortes.webp" >
+           </div>
+
+<div class="cortes"onclick="abrirModal('Sombrancelha')">
+    <label>Sombrancelha R$ 5</label>
+    <img src="sombrancelha.jpg">
+</div>
+
+<div class="cortes"onclick="abrirModal('Cabelo e Sombrancelha')">
+    <label>Cabelo e Sombrancelha R$ 40</label>
+    <img src="corte+sombrancelha.jpeg" >
+</div>
+
+<div class="cortes"onclick="abrirModal('Barba')">
+    <label>Barba R$ 25</label>
+    <img src="barba.jpg" >
+</div>
+
+<div class="cortes"onclick="abrirModal('Barba e Cabelo')">
+    <label>Barba e cabelo R$ 60</label>
+    <img src="barba e cabelo.png" >
+</div>
+
+      
+        <footer>
+        
+            <p class="copyright"> &copy; Copyright Barbearia Barber Shop</p>
+        </footer>
+
+        <div id="modal" class="modal">
+  <div class="modal-content">
+    <span class="fechar" onclick="fecharModal()">&times;</span>
+    <h2 id="titulo-corte">Agendar Corte</h2>
+    <form>
+    
+      <form action="enviar-email.php" method="POST">
+  <input type="hidden" name="tipo-corte" id="tipo-corte">
+
+  <label for="nome">Seu nome:</label>
+  <input type="text" name="nome" required>
+
+  <label for="email">Seu e-mail:</label>
+  <input type="email" name="email" required>
+
+  <label for="horario">Escolha o horário:</label>
+  <input type="datetime-local" name="horario" required>
+
+  <input type="submit" value="Agendar">
+</form>
+
+    </form>
+  </div>
+</div>
+
+    </body>
+
+</html>

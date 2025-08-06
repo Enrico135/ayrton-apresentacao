@@ -1,0 +1,129 @@
+head{
+    background-color: rgb(125, 0, 242);
+}
+
+nav li {
+    display: inline;
+    margin: 0 0 0 15px;
+    text-transform: uppercase;
+    color: #000000;
+    font-weight: bold;
+    font-size: 22px;
+    text-decoration: none;
+}
+nav a:hover{
+color: aqua;
+text-decoration: underline;
+
+}
+
+ #logo{
+    width: 200px;
+ }
+ .caixa{
+    position: relative;
+    width: 940px;
+    margin: 0 auto;
+ }
+ nav{
+    position: absolute;
+    top: 110px;
+    right: 0;
+ }
+ .produtos{
+   width: 940px;
+   margin: 0 auto;
+   padding: 30px 0 ;
+ }
+ .produtos li {
+   display: inline-block;
+   text-align: center;
+   width: 30;
+   vertical-align: top;
+   padding: 30px 0;
+   box-sizing: border-box;
+   border: 2px solid #000000;
+   border-radius: 10px;  
+ }
+.produtos li:hover {
+border-color: rgb(30, 0, 255);
+}
+.produtos li:active {
+ border-color: red;
+}
+.produtos li:hover h2 {
+ font-size: 34px;
+ color: purple;
+}
+
+ .produtos h2{
+   font-size: 30px;
+   font-weight: bold;
+ }
+ .produto-descricao{
+   font-size: 18px;
+ }
+ .produto-preco{
+   font-size: 22px;
+   font-weight: bold;
+   margin-top: 10px;
+ }
+ footer{
+  text-align: center;
+  background-color: #1eff00;
+  padding: 40px;
+ }
+ .copyright{
+  color: #000000;
+  font-size: 13px;
+  margin:  20px 0;
+
+ }
+ table{
+  margin: 20px 0 40px;
+ }
+ thead{
+  background:rgb(30, 0, 255);
+  color: aqua;
+  font-weight: bold;
+ }
+ td, th{
+  border: 1px #000000;
+  padding: 8px 15px;
+ }
+ form label, form p{
+  display: block;
+  font-size: 20px;
+  margin: 0 0 20px;
+ }
+ .input-padra{
+  display: block;
+  margin: 0 0 20px;
+  padding: 10px 25px;
+  width: 50%;
+ }
+ .checkbox{
+  margin: 20px 0;
+ }
+ .envar{
+  width: 40%;
+  padding: orangered;
+  color: white;
+  font-weight: 5px;
+  font-size: 18px;
+  border: none;
+  border-radius: 5px;
+  transition: 1s all;
+  cursor: pointer;
+ }
+.envar:hover{
+  background: darkorange;
+  transform: scale(1.2);
+}
+.mapa{
+  padding: 3em ;
+  text-align: center;
+}
+.mapa p{
+  margin: 0 0 2em;
+}
